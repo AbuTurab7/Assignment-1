@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>As-1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Nushu&family=Playwrite+ID:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <!-- Header -->
+        <header>
+          <div class="menu card">
+            <i
+              id="menu-logo"
+              class="fa-solid fa-bars"
+              style="color: #5b85cc; font-size: 20px"
+            ></i>
+          </div>
+          <img id="poke-logo-img" src="./Poke_logo.png" alt="pokeball" />
+          <div class="mode-swap card">
+            <img id="mode-swap-img" src="./light_mode.png" alt="Dark Mode" />
+          </div>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-section">
+          <div class="input-container">
+            <i class="fa-solid fa-magnifying-glass" style="color: #1d2e51"></i>
+            <input type="text" placeholder="Search for Pokémon..." />
+          </div>
+          <div class="filter-container">
+            <div class="filter-dropdown">
+              <p>Filter by types(1)</p>
+              <i class="fa-solid fa-angle-down" style="color: #1d2e51"></i>
+            </div>
+            <div class="filter-logo">
+              <i
+                class="fa-solid fa-arrow-down-wide-short"
+                style="color: #1d2e51"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards section -->
+        <div class="cards-container">
+          <!-- card-1 -->
+          <div class="cards" data-type="grass">
+            <div class="card-top">
+              <div class="type-main-container">
+                <p class="num">#0908</p>
+                <div class="type-container">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+              </div>
+              <div class="like-container">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-image-container">
+              <div class="img-background"></div>
+              <img
+                height="300px"
+                width="230px"
+                src="./Poke_1.png"
+                alt="Meowscarada"
+              />
+            </div>
+            <div class="card-name-container">
+              <h2 class="pokemon-name">Meowscarada</h2>
+            </div>
+            <div class="card-bottom">
+              <div class="type-name-container">
+                <i class="fa-solid fa-leaf"></i>
+                <p>GRASS</p>
+              </div>
+              <div class="like-container">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="cards" data-type="steel">
+            <div class="card-top">
+              <div class="type-main-container">
+                <p class="num">#0624</p>
+                <div class="type-container">
+                  <i class="fa-solid fa-hexagon"></i>
+                  <div class="steel-cicle"></div>
+                </div>
+              </div>
+              <div class="like-container">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-image-container">
+              <div
+                class="img-background"
+              ></div>
+              <img
+                height="300px"
+                width="230px"
+                src="./Poke_2.png"
+                alt="Pawniard"
+              />
+            </div>
+            <div class="card-name-container">
+              <h2 class="pokemon-name">Pawniard</h2>
+            </div>
+            <div class="card-bottom">
+              <div
+                class="type-name-container"
+              >
+                <i class="fa-solid fa-hexagon"></i>
+                <div
+                  class="steel-cicle"
+                  style="left: 29.4%; height: 6px; width: 6px"
+                ></div>
+                <p>DARK / STEEL</p>
+              </div>
+              <div class="like-container">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="cards" data-type="fire">
+            <div class="card-top">
+              <div class="type-main-container">
+                <p class="num">#0229</p>
+                <div class="type-container">
+                  <i class="fa-solid fa-fire"></i>
+                </div>
+              </div>
+              <div class="like-container">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-image-container">
+              <div
+                class="img-background"
+              ></div>
+              <img
+                height="250px"
+                width="250px"
+                style="margin-top: 20px"
+                src="./Poke_3.png"
+                alt="Houndoom"
+              />
+            </div>
+            <div class="card-name-container">
+              <h2 class="pokemon-name">Houndoom</h2>
+            </div>
+            <div class="card-bottom">
+              <div
+                class="type-name-container"
+              >
+                <i class="fa-solid fa-fire"></i>
+                <p>DARK / FIRE</p>
+              </div>
+              <div class="like-container">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+          <div class="cards" data-type="psychic">
+            <div class="card-top">
+              <div class="type-main-container">
+                <p class="num">#0686</p>
+                <div class="type-container">
+                  <i class="fa-solid fa-droplet"></i>
+                </div>
+              </div>
+              <div class="like-container">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-image-container">
+              <div
+                class="img-background"
+              ></div>
+              <img
+                height="300px"
+                width="230px"
+                src="./Poke_4.png"
+                alt="Inkay"
+              />
+            </div>
+            <div class="card-name-container">
+              <h2 class="pokemon-name">Inkay</h2>
+            </div>
+            <div class="card-bottom">
+              <div
+                class="type-name-container"
+              >
+                <i class="fa-solid fa-droplet"></i>
+                <p>DARK / PSYCHIC</p>
+              </div>
+              <div class="like-container">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Information section -->
+        <div class="info-section-container">
+
+          <div class="info-panel" data-type="explore">
+            <div
+              class="info-logo"
+            >
+              <img src="./pokeball.png" alt="pokeball" />
+            </div>
+            <div class="info-panel-text">
+              <h3 class="info-heading">Explore</h3>
+              <p class="secondary">Discover all your</p>
+              <p class="secondary">favorite Pokémon</p>
+            </div>
+          </div>
+
+          <div class="info-panel" data-type="filter">
+            <div
+              class="info-logo"
+            >
+              <img src="./leaf.png" alt="leaf type" />
+            </div>
+            <div class="info-panel-text">
+              <h3 class="info-heading">Filter</h3>
+              <p class="secondary">Find Pokémon by</p>
+              <p class="secondary">types and abilities</p>
+            </div>
+          </div>
+
+          <div class="info-panel" data-type="collection">
+            <div
+              class="info-logo"
+            >
+              <img src="./star.png" alt="star" />
+            </div>
+            <div class="info-panel-text">
+              <h3 class="info-heading">Collection</h3>
+              <p class="secondary">Save and manage</p>
+              <p class="secondary">your collection</p>
+            </div>
+          </div>
+
+          <div class="info-panel" data-type="stats">
+            <div
+              class="info-logo"
+            >
+              <img src="./stats.png" alt="stats" />
+            </div>
+            <div class="info-panel-text">
+              <h3 class="info-heading">Stats</h3>
+              <p class="secondary">View stats and learn</p>
+              <p class="secondary">about Pokémon</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+          <div class="foooter-logo">
+            <img height="40px" src="./grey_pokeball.png" alt="pokeball" />
+          </div>
+          <p id="copyright" class="secondary">
+            © 2024 Pokémon. All right reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
